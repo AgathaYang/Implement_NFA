@@ -1,0 +1,66 @@
+# test case #1
+REG: a*
+a
+b
+c
+aaa
+aa
+
+# test case #2
+REG: a|b|c
+a
+b
+c
+d
+aa
+
+# test case #3
+REG: ab|c
+ab
+c
+abc
+
+# test case #4
+REG: a*bc
+a
+ab
+bc
+abc
+aabc
+
+# test case #5
+REG: abc*
+a
+b
+c
+ab
+bc
+abc
+abcc
+
+# test case #6:the sample from textbook
+REG: (a|b)*abb
+ababb
+aabbabb
+aabbaab
+
+# test case #7
+REG: abb(a|b)*
+abb
+abba
+abbab
+abbabb
+
+# test case #8
+REG: abb(a|b)*abb(a|b)*abb
+abbabbabb
+abbabababaaabbbabaabb
+abbababbb
+
+# test case #9
+REG: (a|b|c|d|e)
+abcde
+
+# test case #10
+REG: (a|b|c|d|e)*
+abcde
